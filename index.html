@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>App Facturación</title>
+		<link rel="stylesheet" href="styles/stilos.css">
+		
+	</head>
+	<body>
+		<div class="fondo"></div>
+		<div id="infcl">
+			<h2>Datos del cliente</h2><br>
+			<form class="forma">
+				<ul class="list">
+					<li>
+						<select>
+							<option value="blank"> - </option>
+							<option value="ven">V</option>
+							<option value="ext">E</option>
+							<option value="jur">J</option>
+						</select>	
+						<input type="number" name="ci"><br><br>
+					</li>
+					<li>
+						<label>Nombre:</label> 
+						<input type="text" name="name">
+							
+					</li>
+					<li>
+						<label>Telefono:</label>
+						<input type="number" name="phone">
+					</li>
+					<li>
+						<label>E-mail:</label>
+						<input type="email" name="mail">
+					</li>
+					<li>
+						<label>Dirección:</label>
+						<input type= "text" name="address">
+					</li>
+				</ul>
+			</form>
+			
+		</div>
+		
+		<div id="espItem">
+			<table class="tabla">
+				<tbody>
+					<tr>
+						<td>Item1</td>
+						<td class="cost">95.2</td>
+					</tr>
+					
+				</tbody>
+				
+				<tfoot>
+					<tr>
+						<td>Subtotal</td>
+						<td>BsS 95.2</td>
+					</tr>
+					<tr>
+						<td>Total Impuestos</td>
+						<td>BsS 3</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>BsS 98.2</td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="botones">
+				<input type="submit" value="Agregar item" class="boton">
+				<input type="submit" value="Remover item" class="boton">
+			</div>
+			
+		</div>
+		
+		<footer id="">
+				<div class="ancho">
+					<nav>
+						<ul>
+							<li><input type="submit" value="Aceptar" class="aceptar"></li>
+							<li class="segundo"><input type="submit" value="Cancelar" class="cancelar"></li>
+						</ul>
+					</nav>
+				</div>
+		</footer>
+	</body>
+</html>
